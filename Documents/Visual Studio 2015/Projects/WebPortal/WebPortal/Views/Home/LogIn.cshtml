@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<fieldset>
+	<legend>
+		Log In Here
+	</legend>
+			<form action="Submit" method="post">
+				User Name<br/>
+				 <input name ="UserName" type="text" /><br />
+				Password <br/>
+				<input name ="Password" type="text" /><br /><br/>
+
+				<input name="Submit" type="submit" value="submit" />
+			</form>
+</fieldset>

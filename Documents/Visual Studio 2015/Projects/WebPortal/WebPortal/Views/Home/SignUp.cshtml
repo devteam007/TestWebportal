@@ -1,0 +1,72 @@
+﻿@model WebPortal.Models.LogIn
+
+@{
+    ViewBag.Title = "SignUp";
+}
+
+<fieldset>
+	<legend>Personal information</legend>
+	<form action="Submit" method="post">
+		<table>
+
+			<tr>
+				<td>@Html.LabelFor(m => m.FirstName)</td>
+				<td>
+					@Html.TextBoxFor(m => m.FirstName)
+					@Html.ValidationMessageFor(m => m.FirstName)<br /><br />
+				</td>
+
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.LastName)</td>
+				<td>
+					@Html.TextBoxFor(m => m.LastName)
+					@Html.ValidationMessageFor(m => m.LastName)<br /><br />
+				</td>
+
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.EmailId)</td>
+				<td>
+					@Html.TextBoxFor(m => m.EmailId)
+					@Html.ValidationMessageFor(m => m.EmailId)<br /><br />
+				</td>
+
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.ContactNumber)</td>
+				<td>
+					@Html.TextBoxFor(m => m.ContactNumber)
+					@Html.ValidationMessageFor(m => m.ContactNumber)<br /><br />
+				</td>
+
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.Address)</td>
+				<td>
+					@Html.TextBoxFor(m => m.Address)
+					@Html.ValidationMessageFor(m => m.Address)<br /><br />
+				</td>
+
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.UserName)</td>
+				<td>
+					@Html.TextBoxFor(m => m.UserName)
+					@Html.ValidationMessageFor(m => m.UserName)<br /><br />
+				</td>
+
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.Password)</td>
+				<td>
+					@Html.TextBoxFor(m => m.Password)
+					@Html.ValidationMessageFor(m => m.Password)<br /><br />
+				</td>
+
+			</tr>
+
+		</table>
+		<input id="Submit" type="submit" value="submit" />
+	</form>
+</fieldset>
